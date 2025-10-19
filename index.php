@@ -1,5 +1,5 @@
 <?php
-
+require_once('lib/include.php');
 
 
 if(isset($_GET['page'])){
@@ -9,9 +9,7 @@ if(isset($_GET['page'])){
 }
 
 if($page === 'home'){
-    require_once('controllers/homepage.php');
-}elseif($page == 'about'){
-    require_once('controllers/about.php');
-}elseif($page == 'service'){
-    require_once('controllers/service.php');
+    homepage();
+}elseif($page === 'login'){
+    login();
 }

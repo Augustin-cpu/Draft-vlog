@@ -1,2 +1,4 @@
 <?php
-    require_once('template/about.php');
+ function about(){
+       require_once('template/about.php');
+ }
