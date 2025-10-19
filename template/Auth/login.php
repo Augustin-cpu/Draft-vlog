@@ -25,16 +25,16 @@
           <h4 class="card-title mb-3 text-center mt-1">Draft-Vlog</h4>
         <p class="text-muted text-center mb-4 small">Entrez vos identifiants pour continuer</p>
 
-        <form id="loginForm" class="needs-validation" novalidate>
+        <form id="loginForm" method="post" class="needs-validation" novalidate>
           <div class="mb-3">
             <label for="email" class="form-label">Adresse e-mail</label>
-            <input type="email" class="form-control" id="email" name="mail" placeholder="you@example.com" required>
+            <input type="email" class="form-control" id="email" name="mail" placeholder="you@example.com">
             <div class="invalid-feedback">Merci de saisir une adresse e-mail valide.</div>
           </div>
 
           <div class="mb-3">
             <label for="password" class="form-label">Mot de passe</label>
-            <input type="password" class="form-control" id="password" name="pass" minlength="6" placeholder="••••••••" required>
+            <input type="password" class="form-control" id="password" name="pass" placeholder="••••••••">
             <div class="invalid-feedback">Merci de saisir votre mot de passe (min. 6 caractères).</div>
           </div>
 

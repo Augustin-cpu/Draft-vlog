@@ -1,10 +1,14 @@
 <?php
 
 function Auth(){
-     if (isset($_POST) && !empty($_POST['mail']) && !empty($_POST['pass'])) {
-        extract($_POST);
-        $hashed_pass = password_hash($pass, PASSWORD_BCRYPT);
-       login($hashed_pass,$mail);
+     if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['mail']) && !empty($_POST['pass'])) {
+         $pass = $_POST['pass'];
+         $mail = $_POST['mail'];
+        $datas = array(
+         'pass' => $pass,
+         'mail' => $mail
+        );
+        login($datas);
     }
     require_once('template/Auth/login.php');
 }
