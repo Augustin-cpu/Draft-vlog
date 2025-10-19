@@ -1,7 +1,7 @@
 <?php
 
 function login(){
-     if (isset($_POST) && !empty($_POST['login']) && !empty($_POST['pass'])) {
+     if (isset($_POST) && !empty($_POST['mail']) && !empty($_POST['pass'])) {
         extract($_POST);
         $pass = sha1($pass);
         $bdd = database();
@@ -15,5 +15,5 @@ function login(){
             header('Location: index.php');
         }
     }
-    require_once('template/login.php');
+    require_once('template/Auth/login.php');
 }

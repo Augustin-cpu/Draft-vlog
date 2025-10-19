@@ -4,3 +4,4 @@ require_once('config.php');
 require_once('model/database.php');
 require_once('controllers/homepage.php');
 require_once('controllers/login.php');
+require_once('controllers/register.php');

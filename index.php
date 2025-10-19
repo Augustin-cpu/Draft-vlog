@@ -12,4 +12,6 @@ if($page === 'home'){
     homepage();
 }elseif($page === 'login'){
     login();
+}elseif($page === 'register'){
+    register();
 }
