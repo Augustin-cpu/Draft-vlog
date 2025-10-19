@@ -25,34 +25,34 @@
           <h4 class="card-title mb-3 text-center mt-1">Draft-Vlog</h4>
             <p class="text-muted text-center mb-4">Veuillez renseigner vos informations</p>
 
-            <form id="signupForm" class="needs-validation" novalidate>
+            <form id="signupForm" method="post" class="needs-validation">
               <div class="mb-3">
                 <label for="fullName" class="form-label">Nom complet</label>
-                <input type="text" class="form-control" id="fullName" name="fullName" required>
+                <input type="text" class="form-control" id="fullName" name="fullname">
                 <div class="invalid-feedback">Entrez votre nom complet.</div>
               </div>
 
               <div class="mb-3">
                 <label for="email" class="form-label">Adresse e-mail</label>
-                <input type="email" class="form-control" id="email" name="email" required>
+                <input type="email" class="form-control" id="email" name="mail" >
                 <div class="invalid-feedback">Entrez une adresse e-mail valide.</div>
               </div>
 
               <div class="mb-3">
                 <label for="password" class="form-label">Mot de passe</label>
-                <input type="password" class="form-control" id="password" name="password" minlength="8" required>
+                <input type="password" class="form-control" id="password" name="pass" >
                 <div class="form-text">Au moins 8 caractères.</div>
                 <div class="invalid-feedback">Le mot de passe doit contenir au moins 8 caractères.</div>
               </div>
 
               <div class="mb-3">
                 <label for="confirmPassword" class="form-label">Confirmer le mot de passe</label>
-                <input type="password" class="form-control" id="confirmPassword" name="confirmPassword" required>
+                <input type="password" class="form-control" id="confirmPassword" name="confirmPass" >
                 <div class="invalid-feedback" id="confirmFeedback">Les mots de passe doivent correspondre.</div>
               </div>
 
               <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="terms" required>
+                <input type="checkbox" class="form-check-input" id="terms">
                 <label class="form-check-label" for="terms">J'accepte les conditions d'utilisation</label>
                 <div class="invalid-feedback">Vous devez accepter les conditions.</div>
               </div>

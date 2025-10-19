@@ -1,19 +1,10 @@
 <?php
 
-function login(){
+function Auth(){
      if (isset($_POST) && !empty($_POST['mail']) && !empty($_POST['pass'])) {
         extract($_POST);
-        $pass = sha1($pass);
-        $bdd = database();
-        $req = $bdd->prepare('SELECT * FROM users WHERE pass = :pass AND login = :login');
-        $req->execute(array(
-            'pass' => $pass,
-            'login' => $login
-        ));
-        if($req->rowCount() > 0){
-            $_SESSION['Auth'] = $req->fetch();
-            header('Location: index.php');
-        }
+        $hashed_pass = password_hash($pass, PASSWORD_BCRYPT);
+       login($hashed_pass,$mail);
     }
     require_once('template/Auth/login.php');
 }

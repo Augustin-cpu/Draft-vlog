@@ -11,7 +11,7 @@ if(isset($_GET['page'])){
 if($page === 'home'){
     homepage();
 }elseif($page === 'login'){
-    login();
+    Auth();
 }elseif($page === 'register'){
     register();
 }
