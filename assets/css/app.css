@@ -1,0 +1,63 @@
+ .blog-header {
+            line-height: 1;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .blog-footer {
+            padding: 2.5rem 0;
+            color: #727272;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-top: 0.05rem solid #e5e5e5;
+        }
+
+        nav {
+            transform: translateX(50px)
+        }
+
+        .social {
+            margin-left: auto;
+        }
+
+        .main {
+            height: 100%;
+            transform: translateY(80px);
+        }
+        .distance{
+            height: 100%;
+            transform: translateY(80px);
+        }
+        .card-img-top {
+            height: 200px;
+            /* Taille fixe pour les images */
+            object-fit: cover;
+            /* Assure que l'image couvre la zone sans déformation */
+        }
+
+        .text-date-author {
+            font-size: 0.85rem;
+            /* Rendre l'information secondaire plus petite */
+        }
+
+        .sticky-sidebar-content {
+            position: sticky;
+            top: 0;
+            /* Pour qu'elle se colle immédiatement au sommet */
+            /* Assurez-vous aussi que sa hauteur permet le défilement du contenu */
+            height: 100%;
+            /* Pour occuper toute la hauteur de la fenêtre (Viewport Height) */
+            overflow-y: auto;
+            /* Permet à la sidebar elle-même d'avoir une barre de défilement si son contenu est long */
+        }
+        .post1{
+            transform: translateX(100px);
+        }
+        .footer{
+            position: static;
+            bottom: 0;
+             padding: 2.5rem 0;
+            color: #727272;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-top: 0.05rem solid #e5e5e5;
+        }
