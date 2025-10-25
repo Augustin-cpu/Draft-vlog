@@ -16,9 +16,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique.
             </p>
             <div class="d-flex gap-5">
-                <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Discussion</a></p>
-                <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"></a></p>
-                <p><a href="#" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"></a></p>
+                <p><a href="#" class="text-dark text-decoration-none link-offset-2 ">Discussion</a></p>
+                <p><a href="#" class="text-dark text-decoration-none link-offset-2 ">Membre</a></p>
+                <p><a href="#" class="text-dark text-decoration-none link-offset-2 ">Profil</a></p>
             </div>
             <h6 class="bg-body-tertiary p-2 ">Marketing team</h6>
 
