@@ -16,20 +16,38 @@ function update($statement, array $donnees) {}
 function delete($id) {}
 function count_users($statement, $id) {}
 
-function login($data)
+function login(array $data)
 {
+    // 1. Définition des variables et connexion
     $bdd = database();
-    $req = $bdd->prepare('SELECT * FROM users WHERE pass = :pass AND mail = :mail');
+    
+    // 2. Récupérer l'utilisateur par l'e-mail SEULEMENT.
+    // On doit récupérer le HASH du mot de passe pour la vérification.
+    $req = $bdd->prepare('SELECT id_users, mail, pass FROM users WHERE mail = :mail'); 
+    
     $req->execute(array(
-        'pass' => $data['pass'],
         'mail' => $data['mail']
     ));
-    
+
+    // 3. Vérifier si l'utilisateur existe
     if ($req->rowCount() > 0) {
-        $_SESSION['Auth'] = $req->fetch();
-        header('Location: index.php');
-        exit;
+        $user = $req->fetch(PDO::FETCH_ASSOC);
+        
+        // 4. Vérifier le mot de passe fourni avec le HASH stocké
+        // La fonction password_verify() gère la comparaison sécurisée.
+        if (password_verify($data['pass'], $user['pass']) && $data['mail'] === $user['mail']) {
+            
+            // Connexion réussie : Nettoyage avant de stocker en session
+            unset($user['pass']); // Très important : ne pas stocker le hash en session
+            
+            $_SESSION['Auth']['id'] = $user['id_users'];
+            return true ;
+        }
     }
+    
+    // Si l'utilisateur n'existe pas OU si le mot de passe est incorrect
+    // Pour des raisons de sécurité, ne pas indiquer lequel des deux est faux.
+    return false; // Indiquer que la connexion a échoué
 }
 function addUser(array $data)
 {

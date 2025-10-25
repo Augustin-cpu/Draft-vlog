@@ -8,7 +8,12 @@ function Auth(){
          'pass' => $pass,
          'mail' => $mail
         );
-        login($datas);
+        if(login($datas)){
+            header('Location: ?page=home');
+            exit;
+        }else{
+            $error = "Email ou mot de passe incorrect.";
+        }
     }
     require_once('template/Auth/login.php');
 }
