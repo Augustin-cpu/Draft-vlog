@@ -10,6 +10,8 @@ if(isset($_GET['page'])){
 
 if($page === 'home'){
     homepage();
+}elseif($page === 'event'){
+    Event();
 }elseif($page === 'login'){
     Auth();
 }elseif($page === 'register'){

@@ -107,9 +107,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-5 fw-normal text-white" href="?page=service">service</a>
-                    </li> <li class="nav-item">
-                        <a class="nav-link fs-5 fw-normal text-white" href="#">team</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link fs-5 fw-normal text-white" href="#">compte</a>
                     </li>

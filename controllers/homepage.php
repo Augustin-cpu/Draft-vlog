@@ -7,6 +7,6 @@ function homepage(){
         header('Location: ?page=login');
         exit;
     }
-        require_once('template/homepage.php');
+    require_once('template/homepage.php');
     
 }

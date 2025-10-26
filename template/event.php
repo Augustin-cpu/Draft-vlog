@@ -1,114 +1,84 @@
-<?php ob_start(); ?>
-<div class="container distance">
-    <div class="row pt-5">
-        <div class="col-lg-4 p-lg-3 sticky-sidebar-content">
-            <span class="d-block text-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" fill="currentColor" class="bi bi-easel2-fill" viewBox="0 0 16 16">
-                    <path d="M8.447.276a.5.5 0 0 0-.894 0L7.19 1H2.5A1.5 1.5 0 0 0 1 2.5V10h14V2.5A1.5 1.5 0 0 0 13.5 1H8.809z" />
-                    <path fill-rule="evenodd" d="M.5 11a.5.5 0 0 0 0 1h2.86l-.845 3.379a.5.5 0 0 0 .97.242L3.89 14h8.22l.405 1.621a.5.5 0 0 0 .97-.242L12.64 12h2.86a.5.5 0 0 0 0-1zm3.64 2 .25-1h7.22l.25 1z" />
-                </svg>
-            </span>
-            <div class="d-flex">
-                <h1 class="display-5 fw-medium">Draft-Vlog</h1>
-                <span class="badge text-bg-primary ms-2 mt-4 align-self-start">Admin</span>
-            </div>
-            <p class="fs-5">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tristique.
-            </p>
-            <div class="d-flex gap-3">
-                <p><a href="#" class="text-dark text-decoration-none link-offset-2 ">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-square-fill" viewBox="0 0 16 16">
-                            <path d="M2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        </svg>
-                        <span class="fw-normal">Discussion</span>
-                    </a></p>
-                <p><a href="#" class="text-dark text-decoration-none link-offset-2 justify-content-center d-flex gap-1">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
-  <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
-</svg>    
-                <span class="fw-normal">Membre</span>
-                </a></p>
-                <p><a href="?page=event" class="text-dark text-decoration-none link-offset-2 align-content-center d-flex gap-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event-fill m-1" viewBox="0 0 16 16">
-  <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-3.5-7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5"/>
-</svg>
-                    <span class="fw-normal">Événement</span>
-                </a></p>
-            </div>
-            <h6 class="bg-body-tertiary p-2 ">Marketing team</h6>
+<?php
+ob_start();
+?>
+ 
+        <div class="row mt-5">
+            <aside class="col-lg-3 p-lg-4 sticky-sidebar-content">
+                <div class="form">
+                    <form method="POST" action="traitement_ajout_article.php" enctype="multipart/form-data">
 
-            <ul class="list-group list-group-item-light mb-4">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt="" style="width: 45px; height: 45px"
-                            class="rounded-circle" />
-                        <div class="ms-3">
-                            <p class="fw-bold mb-1">John Doe</p>
-                            <p class="text-muted mb-0">john.doe@gmail.com</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <img src="https://mdbootstrap.com/img/new/avatars/6.jpg" class="rounded-circle" alt=""
-                            style="width: 45px; height: 45px" />
-                        <div class="ms-3">
-                            <p class="fw-bold mb-1">Alex Ray</p>
-                            <p class="text-muted mb-0">alex.ray@gmail.com</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <img src="https://mdbootstrap.com/img/new/avatars/7.jpg" class="rounded-circle" alt=""
-                            style="width: 45px; height: 45px" />
-                        <div class="ms-3">
-                            <p class="fw-bold mb-1">Kate Hunington</p>
-                            <p class="text-muted mb-0">kate.hunington@gmail.com</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                        <h2 class="mb-4 text-primary">Nouveau Post d'Article</h2>
+                        <p class="text-muted mb-5">Remplissez les informations ci-dessous pour publier votre contenu.</p>
 
-            <h6 class="bg-body-tertiary p-2">Design team</h6>
+                        <div class="row mb-4">
 
-            <ul class="list-group list-group-item-light">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <img src="https://mdbootstrap.com/img/new/avatars/9.jpg" alt="" style="width: 45px; height: 45px"
-                            class="rounded-circle" />
-                        <div class="ms-3">
-                            <p class="fw-bold mb-1">Soraya Letto</p>
-                            <p class="text-muted mb-0">soraya.letto@gmail.com</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <img src="https://mdbootstrap.com/img/new/avatars/11.jpg" class="rounded-circle" alt=""
-                            style="width: 45px; height: 45px" />
-                        <div class="ms-3">
-                            <p class="fw-bold mb-1">Zeynep Dudley</p>
-                            <p class="text-muted mb-0">zeynep.dudley@gmail.com</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <img src="https://mdbootstrap.com/img/new/avatars/15.jpg" class="rounded-circle" alt=""
-                            style="width: 45px; height: 45px" />
-                        <div class="ms-3">
-                            <p class="fw-bold mb-1">Ayat Black</p>
-                            <p class="text-muted mb-0">ayat.black@gmail.com</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                            <div class="col-md-8 mb-3">
+                                <label for="titre" class="form-label fw-bold">Titre de l'Article <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="titre" name="titre" required
+                                    placeholder="Ex: L'IA : menace ou opportunité ?">
+                                <div class="form-text">Doit être accrocheur (max 100 caractères).</div>
+                            </div>
 
-        </div>
-        <div class="col-lg-8">
-            <section class="col-lg-9">
-                <form class="d-flex mb-3 post1" role="search" action="/search" method="GET">
+                            <div class="col-md-4 mb-3">
+                                <label for="categorie" class="form-label fw-bold">Catégorie <span class="text-danger">*</span></label>
+                                <select class="form-select" id="categorie" name="categorie" required>
+                                    <option value="" disabled selected>Choisir...</option>
+                                    <option value="politique">Politique</option>
+                                    <option value="economie">Économie</option>
+                                    <option value="technologie">Technologie</option>
+                                    <option value="sante">Santé</option>
+                                    <option value="culture">Culture</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="row mb-4">
+
+                            <div class="col-md-6 mb-3">
+                                <label for="auteur" class="form-label fw-bold">Nom de l'Auteur <span class="text-danger">*</span></label>
+                                <input type="text" class="form-control" id="auteur" name="auteur" required
+                                    placeholder="Ex: Marie Dubois">
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label for="date_pub" class="form-label fw-bold">Date (Automatique)</label>
+                                <input type="text" class="form-control" id="date_pub" value="<?php echo date('Y-m-d'); ?>" readonly>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="contenu" class="form-label fw-bold">Contenu de l'Article <span class="text-danger">*</span></label>
+                            <textarea class="form-control" id="contenu" name="contenu" rows="10" required
+                                placeholder="Commencez à rédiger votre article ici..."></textarea>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="image_couverture" class="form-label fw-bold">Image de Couverture</label>
+                            <input class="form-control" type="file" id="image_couverture" name="monfichier"
+                                accept="image/jpeg, image/jpg, image/gif">
+                            <div class="form-text">
+                                Formats acceptés : JPG, JPEG, GIF. Taille maximale : 1 Mo.
+                            </div>
+                        </div>
+
+                        <div class="mb-5">
+                            <label for="description" class="form-label fw-bold">Extrait / Description Courte</label>
+                            <textarea class="form-control" id="description" name="description" rows="3"
+                                placeholder="Un court résumé (utilisé pour les cartes de listage)."></textarea>
+                        </div>
+
+                        <div class="d-flex justify-content-end gap-2">
+                            <button type="reset" class="btn btn-outline-secondary">Effacer</button>
+                            <button type="submit" class="btn btn-primary fw-bold">Publier l'Article</button>
+                        </div>
+
+                    </form>
+                </div>
+            </aside>
+            <section class="col-lg-9 p-lg-4">
+                <form class="d-flex mb-3" role="search" action="/search" method="GET">
 
                     <div class="input-group">
 
@@ -130,9 +100,9 @@
 
                 </form>
 
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 post1">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
-                    <div class="col mb-3">
+                    <div class="col">
                         <div class="card h-100 shadow-sm border-0">
                             <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 1">
 
@@ -158,7 +128,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-3">
+                    <div class="col">
                         <div class="card h-100 shadow-sm border-0">
                             <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 2">
 
@@ -184,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-3">
+                    <div class="col">
                         <div class="card h-100 shadow-sm border-0">
                             <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 2">
 
@@ -210,7 +180,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-3">
+                    <div class="col">
                         <div class="card h-100 shadow-sm border-0">
                             <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 2">
 
@@ -236,7 +206,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-3">
+                    <div class="col">
                         <div class="card h-100 shadow-sm border-0">
                             <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 2">
 
@@ -262,7 +232,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-3">
+                    <div class="col">
                         <div class="card h-100 shadow-sm border-0">
                             <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 2">
 
@@ -288,33 +258,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col mb-3">
-                        <div class="card h-100 shadow-sm border-0">
-                            <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 2">
-
-                            <div class="card-body d-flex flex-column">
-                                <span class="badge text-bg-success mb-2 align-self-start">Technologie</span>
-
-                                <h5 class="card-title text-dark fw-bold">L'IA au service de la médecine : les avancées</h5>
-
-                                <p class="card-text text-secondary mb-3">
-                                    Découvrez comment l'intelligence artificielle révolutionne...
-                                </p>
-
-                                <div class="text-date-author text-muted mt-auto mb-3">
-                                    <span class="me-3">
-                                        <i class="fas fa-calendar-alt text-secondary me-1"></i> 30 septembre 2025
-                                    </span>
-                                    <span>
-                                        <i class="fas fa-user-circle text-secondary me-1"></i> Sophie Martin
-                                    </span>
-                                </div>
-
-                                <a href="#" class="btn btn-sm btn-outline-primary align-self-start">Lire l'article &rarr;</a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col mb-3">
+                    <div class="col">
                         <div class="card h-100 shadow-sm border-0">
                             <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 2">
 
@@ -340,7 +284,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col mb-3">
+                    <div class="col">
                         <div class="card h-100 shadow-sm border-0">
                             <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 2">
 
@@ -365,12 +309,36 @@
                                 <a href="#" class="btn btn-sm btn-outline-primary align-self-start">Lire l'article &rarr;</a>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 2">
+
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge text-bg-success mb-2 align-self-start">Technologie</span>
+
+                                <h5 class="card-title text-dark fw-bold">L'IA au service de la médecine : les avancées</h5>
+
+                                <p class="card-text text-secondary mb-3">
+                                    Découvrez comment l'intelligence artificielle révolutionne...
+                                </p>
+
+                                <div class="text-date-author text-muted mt-auto mb-3">
+                                    <span class="me-3">
+                                        <i class="fas fa-calendar-alt text-secondary me-1"></i> 30 septembre 2025
+                                    </span>
+                                    <span>
+                                        <i class="fas fa-user-circle text-secondary me-1"></i> Sophie Martin
+                                    </span>
+                                </div>
+
+                                <a href="#" class="btn btn-sm btn-outline-primary align-self-start">Lire l'article &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
-    </div>
-</div>
 
 <?php
 $content = ob_get_clean();
