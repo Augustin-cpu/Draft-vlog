@@ -1,6 +1,5 @@
 <?php
 
-function Auth(){
      if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['mail']) && !empty($_POST['pass'])) {
          $pass = $_POST['pass'];
          $mail = $_POST['mail'];
@@ -16,4 +15,3 @@ function Auth(){
         }
     }
     require_once('template/Auth/login.php');
-}

@@ -1,4 +1,2 @@
 <?php
-function service(){
-    require_once('template/service.php');
-}
+require_once('template/service.php');

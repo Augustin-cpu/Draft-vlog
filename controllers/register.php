@@ -1,6 +1,4 @@
 <?php
-function register()
-{
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['pass']) && !empty($_POST['fullname']) && !empty($_POST['mail']) && !empty($_POST['confirmPass'])) {
         $pass = $_POST['pass'];
         $mail = $_POST['mail'];
@@ -21,4 +19,3 @@ function register()
         }
     }
     require_once('template/Auth/register.php');
-}

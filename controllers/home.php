@@ -1,5 +1,5 @@
 <?php
-function homepage(){
+
     if(session_status() === PHP_SESSION_NONE){
         session_start();
     }
@@ -9,4 +9,3 @@ function homepage(){
     }
     require_once('template/homepage.php');
     
-}

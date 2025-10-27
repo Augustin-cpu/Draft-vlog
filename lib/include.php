@@ -5,4 +5,5 @@ require_once('model/database.php');
 require_once('controllers/homepage.php');
 require_once('controllers/event.php');
 require_once('controllers/login.php');
+require_once('controllers/logout.php');
 require_once('controllers/register.php');

@@ -1,5 +1,6 @@
 <?php
-require_once('lib/include.php');
+// require_once('lib/include.php');
+require_once('classes/Routeur.php');
 
 
 if(isset($_GET['page'])){
@@ -7,13 +8,6 @@ if(isset($_GET['page'])){
 }else{
     $page = 'home';
 }
+$router = new Routeur($page);
+$router->Render();
 
-if($page === 'home'){
-    homepage();
-}elseif($page === 'event'){
-    Event();
-}elseif($page === 'login'){
-    Auth();
-}elseif($page === 'register'){
-    register();
-}

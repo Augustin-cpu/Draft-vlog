@@ -107,8 +107,14 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-5 fw-normal text-white" href="?page=service">service</a>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse tabnav" id="navbarNav">
+                <ul class="navbar-nav lien gap-lg-4 ms-lg-5">
                     <li class="nav-item">
-                        <a class="nav-link fs-5 fw-normal text-white" href="#">compte</a>
+                        <a class="nav-link fs-5 fw-normal text-white" href="?page=service">Compte</a>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 fw-normal text-white" href="?page=logout">Deconnexion</a>
                     </li>
                 </ul>
             </div>
