@@ -1,7 +1,4 @@
-<?php
-ob_start();
-?>
- 
+
         <div class="row mt-5">
             <aside class="col-lg-3 p-lg-4 sticky-sidebar-content">
                 <div class="form">
@@ -339,7 +336,3 @@ ob_start();
                 </div>
             </section>
         </div>
-
-<?php
-$content = ob_get_clean();
-require_once('layout/layout.php');

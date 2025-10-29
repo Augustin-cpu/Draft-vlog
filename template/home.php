@@ -1,4 +1,3 @@
-<?php ob_start(); ?>
 <div class="container distance">
     <div class="row pt-5">
         <div class="col-lg-4 p-lg-3 sticky-sidebar-content">
@@ -288,90 +287,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="col mb-3">
-                        <div class="card h-100 shadow-sm border-0">
-                            <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 2">
-
-                            <div class="card-body d-flex flex-column">
-                                <span class="badge text-bg-success mb-2 align-self-start">Technologie</span>
-
-                                <h5 class="card-title text-dark fw-bold">L'IA au service de la médecine : les avancées</h5>
-
-                                <p class="card-text text-secondary mb-3">
-                                    Découvrez comment l'intelligence artificielle révolutionne...
-                                </p>
-
-                                <div class="text-date-author text-muted mt-auto mb-3">
-                                    <span class="me-3">
-                                        <i class="fas fa-calendar-alt text-secondary me-1"></i> 30 septembre 2025
-                                    </span>
-                                    <span>
-                                        <i class="fas fa-user-circle text-secondary me-1"></i> Sophie Martin
-                                    </span>
-                                </div>
-
-                                <a href="#" class="btn btn-sm btn-outline-primary align-self-start">Lire l'article &rarr;</a>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- <div class="col mb-3">
-                        <div class="card h-100 shadow-sm border-0">
-                            <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 2">
-
-                            <div class="card-body d-flex flex-column">
-                                <span class="badge text-bg-success mb-2 align-self-start">Technologie</span>
-
-                                <h5 class="card-title text-dark fw-bold">L'IA au service de la médecine : les avancées</h5>
-
-                                <p class="card-text text-secondary mb-3">
-                                    Découvrez comment l'intelligence artificielle révolutionne...
-                                </p>
-
-                                <div class="text-date-author text-muted mt-auto mb-3">
-                                    <span class="me-3">
-                                        <i class="fas fa-calendar-alt text-secondary me-1"></i> 30 septembre 2025
-                                    </span>
-                                    <span>
-                                        <i class="fas fa-user-circle text-secondary me-1"></i> Sophie Martin
-                                    </span>
-                                </div>
-
-                                <a href="#" class="btn btn-sm btn-outline-primary align-self-start">Lire l'article &rarr;</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-3">
-                        <div class="card h-100 shadow-sm border-0">
-                            <img src="https://placehold.co/600x400" class="card-img-top" alt="Image de l'article 2">
-
-                            <div class="card-body d-flex flex-column">
-                                <span class="badge text-bg-success mb-2 align-self-start">Technologie</span>
-
-                                <h5 class="card-title text-dark fw-bold">L'IA au service de la médecine : les avancées</h5>
-
-                                <p class="card-text text-secondary mb-3">
-                                    Découvrez comment l'intelligence artificielle révolutionne...
-                                </p>
-
-                                <div class="text-date-author text-muted mt-auto mb-3">
-                                    <span class="me-3">
-                                        <i class="fas fa-calendar-alt text-secondary me-1"></i> 30 septembre 2025
-                                    </span>
-                                    <span>
-                                        <i class="fas fa-user-circle text-secondary me-1"></i> Sophie Martin
-                                    </span>
-                                </div>
-
-                                <a href="#" class="btn btn-sm btn-outline-primary align-self-start">Lire l'article &rarr;</a>
-                            </div>
-                        </div>
-                    </div> -->
                 </div>
             </section>
         </div>
     </div>
 </div>
-
-<?php
-$content = ob_get_clean();
-require_once('layout/layout.php');

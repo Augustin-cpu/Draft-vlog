@@ -1,6 +1,4 @@
-<?php
-ob_start();
-?>
+
         <section class="row align-items-center mb-5">
             <div class="col-md-6 order-md-1">
                 <h2 class="mb-4 text-primary">Comment Tout a Commencé</h2>
@@ -70,8 +68,3 @@ ob_start();
                 
             </div>
         </section>
-        
-<?php
-$content = ob_get_clean();
-require_once('layout/layout.php');
-?>

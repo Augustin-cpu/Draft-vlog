@@ -100,7 +100,7 @@
             <div class="collapse navbar-collapse tabnav" id="navbarNav">
                 <ul class="navbar-nav lien gap-lg-4 ms-lg-5">
                     <li class="nav-item">
-                        <a class="nav-link fs-5 fw-normal text-white" aria-current="page" href="index.php">Maison</a>
+                        <a class="nav-link fs-5 fw-normal text-white" aria-current="page" href="?page=home">Maison</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-5 fw-normal text-white" href="?page=about">À Propos</a>
@@ -138,7 +138,7 @@
         </div>
     </header>
     <main class="container-fluid main">
-        <?= $content ?>
+        <?= $contentPage ?>
     </main>
     <footer class="container-fluid blog-footer text-dark">
         <div class="container">

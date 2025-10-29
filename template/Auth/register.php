@@ -1,22 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Inscription</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .span-icon{transform: translateX(45%);}
-    </style>
-</head>
-<body class="bg-light">
-  <main class="container py-5">
+
     <div class="row justify-content-center">
       <div class="col-md-8 col-lg-6">
         <div class="card shadow-sm">
           <div class="card-body p-4">
-            <span class="d-block text-dark span-icon">
+            <span class="d-block text-dark span-icon-register">
                 <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" fill="currentColor" class="bi bi-easel2-fill" viewBox="0 0 16 16">
                     <path d="M8.447.276a.5.5 0 0 0-.894 0L7.19 1H2.5A1.5 1.5 0 0 0 1 2.5V10h14V2.5A1.5 1.5 0 0 0 13.5 1H8.809z" />
                     <path fill-rule="evenodd" d="M.5 11a.5.5 0 0 0 0 1h2.86l-.845 3.379a.5.5 0 0 0 .97.242L3.89 14h8.22l.405 1.621a.5.5 0 0 0 .97-.242L12.64 12h2.86a.5.5 0 0 0 0-1zm3.64 2 .25-1h7.22l.25 1z" />
@@ -68,48 +55,3 @@
         </div>
       </div>
     </div>
-  </main>
-
-  <!-- Bootstrap JS bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- <script>
-    // Validation Bootstrap + vérification correspondance mot de passe
-    (function () {
-      'use strict';
-      const form = document.getElementById('signupForm');
-      const password = document.getElementById('password');
-      const confirmPassword = document.getElementById('confirmPassword');
-      const confirmFeedback = document.getElementById('confirmFeedback');
-
-      function passwordsMatch() {
-        return password.value && confirmPassword.value && password.value === confirmPassword.value;
-      }
-
-      confirmPassword.addEventListener('input', () => {
-        if (!passwordsMatch()) {
-          confirmPassword.classList.add('is-invalid');
-        } else {
-          confirmPassword.classList.remove('is-invalid');
-          confirmPassword.classList.add('is-valid');
-        }
-      });
-
-      form.addEventListener('submit', function (e) {
-        // Reset custom validation state for confirm
-        if (!passwordsMatch()) {
-          confirmPassword.classList.add('is-invalid');
-          confirmFeedback.textContent = 'Les mots de passe ne correspondent pas.';
-        }
-
-        if (!form.checkValidity() || !passwordsMatch()) {
-          e.preventDefault();
-          e.stopPropagation();
-        }
-
-        form.classList.add('was-validated');
-      }, false);
-    })();
-  </script> -->
-</body>
-</html>
